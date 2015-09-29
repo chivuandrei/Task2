@@ -1,0 +1,5 @@
+<h3> Listing all the products </h3>
+
+<% @products.each do |product|%>
+	<p><%= product.title %> | Price: <%=product.price %> | <%= link_to "Buy", "" %></p>
+<% end %>
