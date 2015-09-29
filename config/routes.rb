@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   devise_for :buyers
 
-  resources :products
+  resources :products 
+
+    get 'products/buy/products_id', to:'products#buy'
+  
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
