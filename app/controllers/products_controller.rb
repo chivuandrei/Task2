@@ -9,12 +9,12 @@ def buy
 
  if logged_in_user.credits > p.price
  	logged_in_user.buy_product(p)
- 	flash[:notice]="SUCCESS"
+ 	flash[:notice] = "SUCCESS"
  else
- 	flash[:notice]="You don t have enought credits"
+ 	flash[:notice] = "You don t have enought credits"
  end
 
   redirect_to action: 'index'
-end
+ end
  
 end
